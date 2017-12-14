@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class PPSobelEdge : MonoBehaviour
+public class PPSobelEdge : PPBase
 {
 	[SerializeField]
 	private Vector2 delta = new Vector2(0.01f, 0.01f);
-
-	[SerializeField]
-	private EdgeType type;
 
 	private Material mat;
 
 	private void Awake()
 	{
-		if(type == EdgeType.EdgeOnly)
-			mat = new Material(Shader.Find("Hidden/PPSobelEdge"));
-		else
-			mat = new Material(Shader.Find("Hidden/PPSobelCelShaded"));
+		mat = new Material(shader);
 	}
 
 	private void OnRenderImage(RenderTexture src, RenderTexture dst)
@@ -27,10 +21,5 @@ public class PPSobelEdge : MonoBehaviour
 		mat.SetFloat("_DeltaY", delta.y);
 
 		Graphics.Blit(src, dst, mat);
-	}
-
-	enum EdgeType
-	{
-		EdgeOnly, CelShaded
 	}
 }

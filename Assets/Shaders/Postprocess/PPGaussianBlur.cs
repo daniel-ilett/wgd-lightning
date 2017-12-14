@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class PPGaussianBlur : MonoBehaviour 
+public class PPGaussianBlur : PPBase 
 {
 	[SerializeField]
 	BlurKernelSize kernelSize = BlurKernelSize.Small;

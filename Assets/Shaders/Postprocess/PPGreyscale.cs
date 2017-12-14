@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class PPGreyscale : MonoBehaviour
+public class PPGreyscale : PPBase
 {
 	private Material mat;
 
@@ -12,7 +12,7 @@ public class PPGreyscale : MonoBehaviour
 
 	private void Awake()
 	{
-		mat = new Material(Shader.Find("Hidden/PPGreyscale"));
+		mat = new Material(shader);
 	}
 
 	private void OnRenderImage(RenderTexture src, RenderTexture dst)

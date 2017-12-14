@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 86df37dcfb1dd2f418c96a7ab5e21bbe,
+      objectReference: {fileID: 21300000, guid: 523fc8402955f3a44aa53c58b31a2b2e,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 456f2eb4f96dd714d8cb50d91f4fcc1d, type: 2}
@@ -408,16 +408,28 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f4514e0c755a1364c8afaedd8cfe9f63,
+      objectReference: {fileID: 21300000, guid: 1597cd3adc9b372498c51d26fd5cd1e1,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 456f2eb4f96dd714d8cb50d91f4fcc1d, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &961956583 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114535669603303658, guid: 456f2eb4f96dd714d8cb50d91f4fcc1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 97337572}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!224 &1034173564 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224715997253855424, guid: f24531c8e41267f49a4020e86f04baca,
     type: 2}
   m_PrefabInternal: {fileID: 1541507189}
+--- !u!114 &1035309760 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114732561297223474, guid: f24531c8e41267f49a4020e86f04baca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1541507189}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1148447258
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,11 +516,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434611218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4adc746447983a94a8a5efce1c4746e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d989af7b4d75564abace08847f422ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousScene: sc_ShowcaseDepth
-  nextScene: sc_ShowcaseEdge
+  titleText: {fileID: 1035309760}
+  leftImage: {fileID: 961956583}
+  rightImage: {fileID: 1702560238}
+  snapshotData:
+  - title: Greyscale
+    left: {fileID: 21300000, guid: 1a97a0a3cb37a14438dd8afabe64637b, type: 3}
+    right: {fileID: 21300000, guid: e84ec669af4ad6d408e4d65ffadf638e, type: 3}
+  - title: Sepia-tone
+    left: {fileID: 21300000, guid: 59d46719c8d62624bb7c158366dab682, type: 3}
+    right: {fileID: 21300000, guid: f0f4369e44ebf154dbbdb72df10ab7a8, type: 3}
+  - title: Silhouette (Depth Buffer)
+    left: {fileID: 21300000, guid: 9ee9eca40eaff8141b6349cb08fa0dd4, type: 3}
+    right: {fileID: 21300000, guid: a98580593dde16d49a9829a204c3e49f, type: 3}
+  - title: Blur
+    left: {fileID: 21300000, guid: 523fc8402955f3a44aa53c58b31a2b2e, type: 3}
+    right: {fileID: 21300000, guid: 1597cd3adc9b372498c51d26fd5cd1e1, type: 3}
+  - title: Edge-detection
+    left: {fileID: 21300000, guid: 86df37dcfb1dd2f418c96a7ab5e21bbe, type: 3}
+    right: {fileID: 21300000, guid: f4514e0c755a1364c8afaedd8cfe9f63, type: 3}
+  - title: Cel shaded (not in Odyssey, this is my own!)
+    left: {fileID: 0}
+    right: {fileID: 0}
 --- !u!4 &1434611220
 Transform:
   m_ObjectHideFlags: 0
@@ -738,11 +770,17 @@ Prefab:
     - target: {fileID: 114732561297223474, guid: f24531c8e41267f49a4020e86f04baca,
         type: 2}
       propertyPath: m_Text
-      value: Edge Detection
+      value: Blur
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f24531c8e41267f49a4020e86f04baca, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1702560238 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114535669603303658, guid: 456f2eb4f96dd714d8cb50d91f4fcc1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 564268780}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1720364194
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,8 +863,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720364194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 547.5, y: 265.5, z: 0}
-  m_LocalScale: {x: 0.5703125, y: 0.5703125, z: 0.5703125}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1034173564}
   - {fileID: 1971601639}

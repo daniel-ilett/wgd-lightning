@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1560,73 +1560,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4571333389864528, guid: 846563c127541a1408ba62707bc20cf7,
     type: 2}
   m_PrefabInternal: {fileID: 1123208545}
---- !u!1001 &1151076330
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473397011805164, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114515307491515022, guid: 48c960478fa95cb42953240533b660aa,
-        type: 2}
-      propertyPath: type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114361743281912842, guid: 48c960478fa95cb42953240533b660aa,
-        type: 2}
-      propertyPath: kernelSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114361743281912842, guid: 48c960478fa95cb42953240533b660aa,
-        type: 2}
-      propertyPath: iterations
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 20433567746805472, guid: 48c960478fa95cb42953240533b660aa,
-        type: 2}
-      propertyPath: far clip plane
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 114029322627805134, guid: 48c960478fa95cb42953240533b660aa,
-        type: 2}
-      propertyPath: type
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 48c960478fa95cb42953240533b660aa, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1161627515
 Prefab:
   m_ObjectHideFlags: 0
@@ -1995,11 +1928,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1441876734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4adc746447983a94a8a5efce1c4746e5, type: 3}
+  m_Script: {fileID: 11500000, guid: e24e828592060b14499b8df9bf2e72c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousScene: sc_OdysseyGreyscale
-  nextScene: sc_OdysseySepia
+  showcaseCameras:
+  - {fileID: 1946796097546854, guid: cfe1493e86f28cd4aa94512012ed33c8, type: 2}
+  - {fileID: 1959254828266056, guid: 6eeb8992266b1854b993e25460e31028, type: 2}
+  - {fileID: 1017712247927738, guid: 64d7ba898466d0b4187b37a6b4ab523e, type: 2}
+  - {fileID: 1307293739644852, guid: 46893408b4e1d2544a225815a87de0bf, type: 2}
+  - {fileID: 1007380165116572, guid: 85eceb1512dddc24caece9828e95b93b, type: 2}
+  - {fileID: 1138653961779388, guid: b7a1b7d33ca217e4ab339a8593b050f2, type: 2}
 --- !u!4 &1441876736
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,7 +1949,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1490825011
 Prefab:

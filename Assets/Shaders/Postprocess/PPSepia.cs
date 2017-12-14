@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class PPSepia : MonoBehaviour
+public class PPSepia : PPBase
 {
 	private Material mat;
 
@@ -12,7 +12,7 @@ public class PPSepia : MonoBehaviour
 
 	private void Awake()
 	{
-		mat = new Material(Shader.Find("Hidden/PPSepia"));
+		mat = new Material(shader);
 	}
 
 	private void OnRenderImage(RenderTexture src, RenderTexture dst)

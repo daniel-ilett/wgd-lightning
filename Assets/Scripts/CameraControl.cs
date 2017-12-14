@@ -37,8 +37,8 @@ public class CameraControl : MonoBehaviour
 
 	private void Update()
 	{
-		moveVector = transform.forward * Input.GetAxis("Vertical");
-		moveVector += transform.right * Input.GetAxis("Horizontal");
+		moveVector = child.transform.forward * Input.GetAxis("Vertical");
+		moveVector += child.transform.right * Input.GetAxis("Horizontal");
 		moveVector += transform.up * Input.GetAxis("Applicate");
 
 		rotateVector = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) 

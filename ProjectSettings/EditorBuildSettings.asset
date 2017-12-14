@@ -9,38 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/sc_Title.unity
     guid: 6fe78a4c2270d3c479878b001af9b836
   - enabled: 1
-    path: Assets/Scenes/sc_OdysseyGreyscale.unity
-    guid: 2a9b90e7166fae648b92ddccbb9202ea
-  - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseGreyscale.unity
-    guid: 1438c75ca6b8aa545bb4ae622b61d37a
-  - enabled: 1
-    path: Assets/Scenes/sc_OdysseySepia.unity
-    guid: 80c95968ce607a54cb80ed3396066f97
-  - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseSepia.unity
-    guid: f819e82c51738ec49a261687e30552e2
-  - enabled: 1
-    path: Assets/Scenes/sc_OdysseyBlur.unity
+    path: Assets/Scenes/sc_Screenshot.unity
     guid: d833840e433016a44988809653ab9400
   - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseBlur.unity
+    path: Assets/Scenes/sc_Showcase.unity
     guid: 261296e2daa9ae643a2bca600ce25622
-  - enabled: 1
-    path: Assets/Scenes/sc_OdysseyDepth.unity
-    guid: 9412a571f03b1c840ab1d5c0da865d10
-  - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseDepth.unity
-    guid: be7157418a7bc924d8b976bff43394a7
-  - enabled: 1
-    path: Assets/Scenes/sc_OdysseyEdge.unity
-    guid: 0b078d32db6b42444841f5e69781eadf
-  - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseEdge.unity
-    guid: b5573d12f3d0d6249b7b8f4b4eb3c2e2
-  - enabled: 1
-    path: Assets/Scenes/sc_ShowcaseCel.unity
-    guid: 563c6a7bd421f824a8c308bcab4821e2
   - enabled: 1
     path: Assets/Scenes/sc_End.unity
     guid: 7a65f96cb758c7c428e6187bcdd2158d
