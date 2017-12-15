@@ -28,6 +28,17 @@ public class SceneControl : MonoBehaviour
 
 	private void Update()
 	{
+		if (Input.GetButton("Cancel"))
+		{
+			Debug.Log("Quit");
+
+#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+#else
+			Application.Quit();
+#endif
+		}
+
 		if (Input.GetButtonDown("Next"))
 		{
 			if(index < shaderTypes.Length + 1 && sceneType == SceneType.SHOWCASE)
