@@ -7,6 +7,9 @@ public class End : MonoBehaviour
 	private void Update()
 	{
 		if (Input.GetButtonDown("Cancel"))
+		{
+			Debug.Log("Quit");
 			Application.Quit();
+		}
 	}
 }
